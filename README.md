@@ -5,9 +5,9 @@ https://api.hitbtc.com/
 
 It uses Spring Boot, Lombok and Retrofit.
 
-After running `App`, one websocket connection to obtain orderbook updates is opened once per second.
+After running `App`, websocket connection to obtain orderbook updates is opened once per second.
 
-When some number of connections is reached, `ProtocolException` is reached.
+When some number of connections is reached, `ProtocolException` is thrown.
 
 ```
 java.net.ProtocolException: Expected HTTP 101 response but was '429 Too Many Requests'
